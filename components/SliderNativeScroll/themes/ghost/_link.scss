@@ -1,0 +1,13 @@
+%theme-ghost-slider-link {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  outline: none;
+  font: inherit;
+
+  &:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+}

@@ -1,0 +1,5 @@
+@import "../../shared/SliderCore/Progress/themes.default";
+
+%slider-css-animation-theme-ghost {
+  @extend %theme-default-slider-progress;
+}

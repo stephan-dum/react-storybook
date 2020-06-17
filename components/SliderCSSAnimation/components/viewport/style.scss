@@ -1,0 +1,19 @@
+.animation-slider-viewport {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.animation-slider-animation {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation-iteration-count: infinite;
+  position: relative;
+
+  > * {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%
+  }
+}

@@ -1,0 +1,16 @@
+@import "link";
+@import "link-list";
+@import "link-sibling";
+@import "../../../../shared/SliderCore/Progress/themes.default";
+
+%slider-theme-ghost {
+  @extend %theme-default-slider-progress;
+  @extend %theme-ghost-slider-link-sibling;
+
+  .slider-link-list {
+    @extend %theme-ghost-slider-link-list;
+  }
+  .slider-link {
+    @extend %theme-ghost-slider-link;
+  }
+}

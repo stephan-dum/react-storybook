@@ -1,0 +1,20 @@
+%theme-ghost-slider-link-sibling {
+  .slider-link-sibling {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: var(--sibling-size, 2em);
+    height: var(--sibling-size, 2em);
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-link-sibling-left {
+    left: 1em;
+  }
+  .slider-link-sibling-right {
+    right: 1em;
+  }
+}

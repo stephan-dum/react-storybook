@@ -1,0 +1,23 @@
+%theme-ghost-slider-link-list {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .slider-link {
+    display: inline-block;
+    border-radius: 50%;
+    height: var(--bullet-size, 1.25em);
+    width: var(--bullet-size, 1.25em);
+    margin: var(--buttet-gutter, 0.5em);
+  }
+
+  .slider-link-list__li--current .slider-link {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+}

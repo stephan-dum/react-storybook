@@ -1,0 +1,5 @@
+@import "../../themes/ghost/index";
+
+.slider-native-scroll {
+  @extend %slider-theme-ghost;
+}
