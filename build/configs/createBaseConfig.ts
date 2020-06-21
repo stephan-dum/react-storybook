@@ -6,8 +6,9 @@ import {ProvidePlugin, HotModuleReplacementPlugin} from 'webpack';
 import {CleanWebpackPlugin} from "clean-webpack-plugin";
 import DynamicResolverPlugin from "../plugins/DynamicResolverPlugin";
 import webpackMerge from "webpack-merge";
+import {join} from "path";
 
-const createBaseConfig: ICreateBaseConfig = ({mode, cwd, outputPath, target, entry}) => {
+const createBaseConfig: ICreateBaseConfig = ({mode, base, cwd, outputPath, target, entry}) => {
   const plugins = [
     new ProvidePlugin({
       "classNames" : ["classnames"],
@@ -16,13 +17,13 @@ const createBaseConfig: ICreateBaseConfig = ({mode, cwd, outputPath, target, ent
     new CleanWebpackPlugin(),
   ];
 
-  if(mode === IMode.development) {
-    plugins.push(
-      new HotModuleReplacementPlugin(),
-    );
-
-    webpackMerge({entry}, {entry : 'webpack-hot-middleware/client'});
-  }
+  // if(mode === IMode.development) {
+  //   plugins.push(
+  //     new HotModuleReplacementPlugin(),
+  //   );
+  //
+  //   webpackMerge({entry}, {entry : 'webpack-hot-middleware/client'});
+  // }
   return {
     mode,
     entry,
@@ -36,7 +37,7 @@ const createBaseConfig: ICreateBaseConfig = ({mode, cwd, outputPath, target, ent
     resolve: {
       extensions: ['.ts', '.tsx', '.js', 'jsx', 'scss'],
       alias: {
-        "~": cwd,
+        "~": join(cwd, base),
         "classNames" : "classnames"
       },
       plugins : [

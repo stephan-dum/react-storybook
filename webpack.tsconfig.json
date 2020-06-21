@@ -7,5 +7,10 @@
     "paths" : {
       "~/*" : ["./*"]
     }
-  }
+  },
+  "include": [
+    "node_modules/**/*",
+    "src/**/*",
+    "build/**/*"
+  ]
 }

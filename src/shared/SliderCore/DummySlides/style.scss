@@ -1,0 +1,37 @@
+@import "../../../components/SliderNativeScroll/themes/ghost/link";
+
+.dummy-slide {
+  position: relative;
+  display: inherit;
+
+  .button {
+    @extend %theme-ghost-slider-link;
+
+    position: absolute;
+    bottom: 3em;
+    right: 5em;
+    padding: 0.5em 1.5em;
+  }
+  .headline-primary,
+  .headline-secondary {
+    position: absolute;
+    padding: 0.5em 1em 0.5em 1rem;
+    color: white;
+  }
+  .headline-primary {
+    bottom: 3em;
+    background-color: var(--color-primary);
+  }
+  .headline-secondary {
+    bottom: 2em;
+    background-color: var(--color-secondary);
+  }
+}
+html, body {
+  margin:0;
+  padding:0;
+}
+#root {
+  --color-primary: limegreen;
+  --color-secondary: black;
+}

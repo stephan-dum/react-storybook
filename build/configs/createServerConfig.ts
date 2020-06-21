@@ -8,6 +8,7 @@ import {ProvidePlugin, NormalModuleReplacementPlugin} from "webpack";
 
 const createServerConfig: ICreateServerConfig = ({
   cwd,
+  base,
   mode
 }) => {
   const target = ITarget.node;
@@ -15,10 +16,11 @@ const createServerConfig: ICreateServerConfig = ({
 
   const baseConfig = createBaseConfig({
     cwd,
+    base,
     mode,
     outputPath,
     target,
-    entry: join(cwd, "./server/index.tsx")
+    entry: join(cwd, base, "./server/index.tsx")
   });
 
   const serverConfig = {

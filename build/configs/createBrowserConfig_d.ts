@@ -3,6 +3,7 @@ import {IMode, IPresets} from "../configFactory_d";
 
 interface ICreateBrowserConfigOptions {
   cwd: string;
+  base: string;
   mode: IMode;
   preset: IPresets
 }

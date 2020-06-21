@@ -9,6 +9,7 @@ import {ProvidePlugin} from "webpack";
 
 const createBrowserConfig: ICreateBrowserConfig = ({
   cwd,
+  base,
   mode,
   preset
 }) => {
@@ -17,17 +18,17 @@ const createBrowserConfig: ICreateBrowserConfig = ({
 
   const baseConfig = createBaseConfig({
     cwd,
+    base,
     mode,
     outputPath,
     target,
-    entry : join(cwd, "./client.tsx"),
+    entry : join(cwd, base, "./client.tsx"),
   });
 
   const browserConfig = {
     resolve : {
       alias : {
         "react" : "preact/compat",
-        "react-dom/test-utils" : "preact/test-utils",
         "react-dom" : "preact/compat",
       }
     },

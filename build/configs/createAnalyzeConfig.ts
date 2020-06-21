@@ -6,16 +6,19 @@ import createBrowserConfig from "./createBrowserConfig";
 
 const createAnalyzeConfig: ICreateAnalyzeConfig = ({
   cwd,
+  base,
   analyze
 }) => {
   const config = (
     analyze === IAnalyze.server
       ? createServerConfig({
         cwd,
+        base,
         mode : IMode.production
       })
       : createBrowserConfig({
         cwd,
+        base,
         mode : IMode.production,
         preset : analyze as unknown as IPresets
       })

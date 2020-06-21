@@ -35,7 +35,7 @@ const getEnvArgs = (rawArgs: string[]): IParams => {
   return params;
 };
 
-const onStart = () => console.log('Example app listening on port 3000!');
+const onStart = () => console.log('Listening on port 3000!');
 const cwd = process.cwd();
 
 function normalizeAssets(assets: any) {
@@ -59,8 +59,7 @@ const main = (argv: string[]) => {
 
   app.use((request, response) => {
     const { stats } = response.locals.webpackStats;
-    const jsonWebpackStats = stats.toJson();
-    const { assetsByChunkName } = jsonWebpackStats;
+    const { assetsByChunkName } = stats;
 
     const assets = normalizeAssets(assetsByChunkName.main)
       .filter((path) => path.endsWith('.js'))

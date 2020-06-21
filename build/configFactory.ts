@@ -3,6 +3,8 @@ import {IAnalyze} from "./configs/createAnalyzeConfig_d";
 import createAnalyzeConfig from "./configs/createAnalyzeConfig";
 import createServerConfig from "./configs/createServerConfig";
 import createBrowserConfig from "./configs/createBrowserConfig";
+import {join} from "path";
+const base = "./src";
 
 const configFactory: IConfigFactory = (env = {}) => {
   const {
@@ -13,18 +15,18 @@ const configFactory: IConfigFactory = (env = {}) => {
 
   if(analyze !== IAnalyze.disabled) {
     return [
-      createAnalyzeConfig({cwd, analyze})
+      createAnalyzeConfig({cwd, base, analyze})
     ];
   }
 
   const configs = [
-    createServerConfig({ cwd, mode }),
-    createBrowserConfig({ cwd, mode, preset : IPresets.es6})
+    createBrowserConfig({ cwd, base, mode, preset : IPresets.es6}),
+    createServerConfig({ cwd, base, mode })
   ];
 
   if(mode === IMode.production) {
     configs.push(
-      createBrowserConfig({ cwd, mode, preset : IPresets.es5})
+      createBrowserConfig({ cwd, base, mode, preset : IPresets.es5})
     );
   }
 

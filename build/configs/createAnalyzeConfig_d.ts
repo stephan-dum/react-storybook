@@ -9,6 +9,7 @@ export enum IAnalyze {
 
 interface ICreateAnalyzeConfigOptions {
   cwd: string;
+  base: string;
   analyze: IAnalyze
 }
 

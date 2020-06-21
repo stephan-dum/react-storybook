@@ -5,7 +5,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "cross-env TS_NODE_PROJECT=\"./webpack.tsconfig.json\" webpack --config=./webpack.config.ts",
-    "webpack_new": "cross-env TS_NODE_PROJECT=\"./webpack.tsconfig.json\" ts-node ./build/index.ts",
     "dev": "npm run webpack -- --watch",
     "build": "npm run webpack -- --env.mode=production",
     "analyze": "npm run build -- --env.analyze=true",

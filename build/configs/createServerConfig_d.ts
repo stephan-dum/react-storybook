@@ -3,6 +3,7 @@ import {IMode} from "../configFactory_d";
 
 interface ICreateServerConfigOptions {
   cwd: string;
+  base: string;
   mode: IMode
 }
 

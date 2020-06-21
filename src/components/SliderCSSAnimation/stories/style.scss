@@ -1,0 +1,5 @@
+@import "../themes.ghost";
+
+.animation-slider {
+  @extend %slider-css-animation-theme-ghost;
+}
