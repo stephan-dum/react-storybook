@@ -16,16 +16,10 @@ export enum IStoreStateModes {
   immutable = "immutable"
 }
 
-interface IPrototypeDescriptor {
-  get: () => any;
-  set?: (value: any) => void;
-  enumerable: boolean;
-}
-
 const stateFactory = <
   State,
   Setters extends keyof State,
-  >(initState: State, mutations: Setters[], mode: IStoreStateModes) => {
+  >(initState: State, mutations: Setters[]) => {
 
   const setState: {
     [P in Setters]?: any;

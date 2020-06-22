@@ -1,10 +1,8 @@
-import {FunctionComponent, VNode} from "preact";
-import {useState} from "preact/hooks"
-import Logger from "../globals/utils/logger";
-import lazyRequire from "../globals/lazyRequire";
-import Loader from "../globals/components/loader";
+import {FunctionComponent} from "preact";
+import Logger from "~/globals/utils/logger";
+import lazyRequire from "~/globals/lazyRequire";
 import {IAppProps} from "../App";
-import Message from "../globals/components/Message";
+import Message from "~/globals/components/Message";
 
 const replacer = (url: string) => {
   const name = url

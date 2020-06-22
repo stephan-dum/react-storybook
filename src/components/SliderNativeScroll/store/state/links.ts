@@ -1,4 +1,4 @@
-import {IInitProto} from "../../../../globals/utils/store/init";
+import {IInitProto} from "~/globals/store/init";
 import {ISliderProps} from "../../index_d";
 
 const links: IInitProto<string[], ISliderProps> = {

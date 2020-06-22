@@ -30,6 +30,7 @@ const RandomImage: IRandomImage = ({
     width={width}
     height={height}
     className={className}
+    alt={"version" + version}
     style={{
       "objectFit" : fit,
       "objectPosition": `${positionY} ${positionX}`,

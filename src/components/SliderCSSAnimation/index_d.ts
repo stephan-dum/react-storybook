@@ -1,5 +1,5 @@
 import {ISliderProps} from "../SliderNativeScroll/index_d";
-import {ICSSStyle} from "../../globals/types/ICSSStyle";
+import {ICSSStyle} from "~/types/ICSSStyle";
 
 export type IAnimationSliderProps = Partial<
   ISliderProps

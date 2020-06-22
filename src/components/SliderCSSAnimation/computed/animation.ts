@@ -1,5 +1,5 @@
-import {round} from "../../../globals/utils/round";
-import {IKeyFrame} from "../../../shared/CSSAnimation/utils/createAnimation_d";
+import {round} from "~/globals/utils/round";
+import {IKeyFrame} from "~/globals/components/CSSAnimation/utils/createAnimation_d";
 
 import IAnimationSliderViewportComputedAnimation from "./animation_d";
 

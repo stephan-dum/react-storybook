@@ -1,5 +1,5 @@
-import ISliderProgress from "./definitions";
-import {computedFactory} from "~/globals/utils/store/computed";
+import ISliderProgress from "./index_d";
+import {computedFactory} from "~/globals/store/computed";
 import defaultProps from "./defaultProps";
 import SliderProgressComputedAnimation from "./computed/animation";
 import Index from "./template";

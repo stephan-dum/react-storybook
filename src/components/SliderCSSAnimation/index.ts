@@ -4,7 +4,7 @@ import classNames from "classnames";
 import Template from "./template";
 import defaultProps from "./defaultProps";
 import "./style.scss";
-import {computedFactory} from "~/globals/utils/store/computed";
+import {computedFactory} from "~/globals/store/computed";
 import animationProto from "./computed/animation";
 
 const AnimationSlider: FunctionComponent<IAnimationSliderProps> = (props) => {

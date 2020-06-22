@@ -1,4 +1,4 @@
-import {ICSSAnimationProps} from "../../../CSSAnimation/index_d";
+import {ICSSAnimationProps} from "../~/globals/components/CSSAnimation/index_d";
 import {FunctionComponent} from "react";
 
 interface ISliderProgressTemplateProps {

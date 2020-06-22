@@ -1,4 +1,4 @@
-import storeFactory from "../../../globals/utils/store";
+import storeFactory from "../../../globals/store";
 import { init } from "./state";
 import { sliderStateComputed } from "./computed";
 import { sliderStateMutations } from "./mutations";

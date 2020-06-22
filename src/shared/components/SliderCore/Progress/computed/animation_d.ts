@@ -1,5 +1,5 @@
-import {ISliderProgressProps} from "../definitions";
-import {IComputed} from "../../../../globals/utils/store/computed";
+import {ISliderProgressProps} from "../index_d";
+import {IComputed} from "~/globals/store/computed";
 
 type ISliderProgressComputedAnimation = IComputed<ISliderProgressProps, never, ISliderProgressProps>
 

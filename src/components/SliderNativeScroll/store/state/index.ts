@@ -1,4 +1,4 @@
-import {initFactory} from "~/globals/utils/store/init";
+import {initFactory} from "~/globals/store/init";
 import links from "./links";
 import current from "./current";
 import ISliderInitState from "./index_d";

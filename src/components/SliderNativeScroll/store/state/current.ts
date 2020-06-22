@@ -1,9 +1,9 @@
-import {IInitProto} from "../../../../globals/utils/store/init";
+import {IInitProto} from "~/globals/store/init";
 import {ISliderProps} from "../../index_d";
 
 const current: IInitProto<number, ISliderProps> = {
   watch : ["props.children", "props.groupSize"],
-  handler({ children, groupSize }, state) {
+  handler({ children, groupSize }) {
     const hash = typeof window !== "undefined" ? document.location.hash.slice(1) : '';
 
     return Math.max(

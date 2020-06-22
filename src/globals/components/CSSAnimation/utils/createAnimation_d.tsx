@@ -1,4 +1,4 @@
-import {ICssClassBody} from "../../../globals/utils/cssJsonToString/cssJsonToStringClassBodyDefinitions";
+import {ICssClassBody} from "../../../utils/cssJsonToString/cssJsonToStringClassBody_d";
 
 export type IKeyFrame = [ICssClassBody, number, number?];
 

@@ -1,7 +1,7 @@
 import cssJsonToStringClass from "../../utils/cssJsonToString/cssJsonToStringClass";
 import IReactStyle from "./index_d";
 import Template from "./template";
-import {ICssJson} from "../../utils/cssJsonToString/cssJsonToStringClassDeinitions";
+import {ICssJson} from "../../utils/cssJsonToString/cssJsonToStringClass_d";
 
 const toString = Object.prototype.toString;
 

@@ -1,4 +1,4 @@
-import {round} from "../../../../globals/utils/round";
+import {round} from "~/globals/utils/round";
 import ISliderProgressComputedAnimation from "./animation_d";
 
 const SliderProgressComputedAnimation: ISliderProgressComputedAnimation = {

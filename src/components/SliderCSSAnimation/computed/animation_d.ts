@@ -1,5 +1,5 @@
-import {IComputed} from "../../../globals/utils/store/computed";
-import {ICSSAnimationProps} from "../../../shared/CSSAnimation/index_d";
+import {IComputed} from "~/globals/store/computed";
+import {ICSSAnimationProps} from "~/globals/components/CSSAnimation/index_d";
 import {IAnimationSliderProps} from "../index_d";
 
 type IAnimationSliderViewportComputedAnimation = IComputed<Omit<ICSSAnimationProps, "children" | "template">, IAnimationSliderProps>;

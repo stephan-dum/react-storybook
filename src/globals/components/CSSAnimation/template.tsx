@@ -1,6 +1,5 @@
 import {FunctionComponent, VNode} from "preact";
-import ReactStyle from "../../globals/components/ReactStyle";
-import {ICSSStyle} from "../../globals/types/ICSSStyle";
+import ReactStyle from "../ReactStyle";
 
 type ICSSAnimationTemplate = FunctionComponent<{
   children: VNode | VNode[];

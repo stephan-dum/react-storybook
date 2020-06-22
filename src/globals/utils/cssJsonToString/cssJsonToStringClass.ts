@@ -1,4 +1,4 @@
-import IReactStyleClassToString from "./cssJsonToStringClassDeinitions";
+import IReactStyleClassToString from "./cssJsonToStringClass_d";
 import cssJsonToStringClassBody from "./cssJsonToStringClassBody";
 
 const cssJsonToStringClass: IReactStyleClassToString = (classList) => (

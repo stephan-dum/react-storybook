@@ -1,4 +1,4 @@
-import {ICssClassBody} from "./cssJsonToStringClassBodyDefinitions";
+import {ICssClassBody} from "./cssJsonToStringClassBody_d";
 
 export interface ICssClass {
   selector: string | string[];

@@ -1,4 +1,4 @@
-import {IComputed} from "../../../../globals/utils/store/computed";
+import {IComputed} from "~/globals/store/computed";
 import {ISliderProps} from "../../index_d";
 import {ISliderState} from "../state/index_d";
 

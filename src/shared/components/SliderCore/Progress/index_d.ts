@@ -1,5 +1,5 @@
 import {FunctionComponent} from 'preact';
-import {ICSSStyle} from "../../../globals/types/ICSSStyle";
+import {ICSSStyle} from "~/types/ICSSStyle";
 
 export type ISliderProgressProps = Partial<{
   displayTime: number;

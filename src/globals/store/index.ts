@@ -1,10 +1,9 @@
 import actionFactory, {IActionContext, IActionTree} from "./actions";
-import computedFactory, {IComputed, IComputedTree} from "./computed";
+import computedFactory, {IComputed} from "./computed";
 import mutationFactory, {IMutationContext, IMutationTree} from "./mutations";
 
 import stateFactory from "./state";
 import {IStoreStateModes} from "./state";
-import {useMemo} from "preact/hooks";
 
 
 export enum IStoreEncapsulations {

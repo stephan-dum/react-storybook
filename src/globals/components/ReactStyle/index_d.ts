@@ -1,5 +1,5 @@
 import {FunctionComponent} from "react";
-import {ICssJson} from "../../utils/cssJsonToString/cssJsonToStringClassDeinitions";
+import {ICssJson} from "../../utils/cssJsonToString/cssJsonToStringClass_d";
 
 export interface IReactStyleProps {
   children: string | ICssJson;

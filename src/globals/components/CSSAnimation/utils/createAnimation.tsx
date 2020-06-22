@@ -1,4 +1,4 @@
-import cssJsonToStringClassBody from "../../../globals/utils/cssJsonToString/cssJsonToStringClassBody";
+import cssJsonToStringClassBody from "../../../utils/cssJsonToString/cssJsonToStringClassBody";
 import ICreateAnimation, {IKeyFrame} from "./createAnimation_d";
 
 const createKeyframe = ([style, start, end]: IKeyFrame) => (

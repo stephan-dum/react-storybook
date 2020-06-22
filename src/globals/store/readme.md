@@ -68,7 +68,6 @@ export default SliderTemplate;
 ### Slider/index_d.ts
 ````typescript
 import { FunctionComponent, VNode } from "preact";
-import debounce from "lodash/debounce";
 
 export interface ISlideSlide {
       key: string | number;

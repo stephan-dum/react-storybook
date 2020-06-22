@@ -4,6 +4,8 @@ import createBaseConfig from "./createBaseConfig";
 import {join} from "path";
 import webpackMerge from "webpack-merge";
 import HtmlWebpackPlugin = require('html-webpack-plugin');
+// TODO: find out why we declare module is not working properly
+// @ts-ignore
 import ExtractCssChunks from "extract-css-chunks-webpack-plugin";
 import {ProvidePlugin} from "webpack";
 
